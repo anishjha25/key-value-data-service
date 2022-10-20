@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  storage:
+    image: anishjha025/kvstorage
+    expose:
+      - "8080"
+  kvapp:
+    image: anishjha025/kvapp
+    depends_on:
+      - storage
+    expose:
+      - "8082"
+

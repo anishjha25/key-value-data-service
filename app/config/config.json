@@ -1,0 +1,5 @@
+{
+  "host": "0.0.0.0",
+  "port": 8082,
+  "storageHost": "http://storage:8080/api/kv"
+}
