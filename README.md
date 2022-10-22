@@ -11,7 +11,7 @@
 3. Create docker-compose.yml 
 4. kompose convert to convert docker compose to kubernetes deployment config.
 5. Update the deployment manifests with the docker images
-6. kubectl deploy <comma separated.yaml> (assuming kubernetes service already running)
+6. kubectl apply -f <comma separated.yaml> (assuming kubernetes service already running)
 7. Expose kvapp behind a load balancer
     - minikube tunnel 
     - kubectl expose deployment kvapp --type=LoadBalancer --name=lb
